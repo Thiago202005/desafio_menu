@@ -11,21 +11,21 @@ public class Dish
         get { return name; } set { name = value; }
     }
     
-    private float _price;
+    private float price;
     public float Price
     {
-        get { return _price; } set { _price = value; }
+        get { return price; } set { price = value; }
     }
     
-    private bool _isVegetarian;
+    private bool isVegetarian;
     public bool IsVegetarian
     {
-        get { return _isVegetarian;} set { _isVegetarian = value; }
+        get { return isVegetarian;} set { isVegetarian = value; }
     }
     private Dish(string name, float price, bool isVegetarian)
     {
         this.name = name;
-        this._price = price;
-        this._isVegetarian = isVegetarian;
+        this.price = price;
+        this.isVegetarian = isVegetarian;
     }
 }
