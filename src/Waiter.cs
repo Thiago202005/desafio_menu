@@ -8,4 +8,20 @@ namespace Ucu.Poo.Restaurant;
 public class Waiter
 {
     private ArrayList assignedTables = new ArrayList();
+    private String name = "Juan";
+
+    public ArrayList AssignTable(Table mesa)
+    {
+        assignedTables.Add(mesa);
+        return assignedTables;
+    }
+
+    public void  TakeOrder(Table table, Dish plato)
+    {
+        if (assignedTables.Contains(table))
+        {
+            table.AddToOrder(plato);
+        }
+    }
+    
 }
