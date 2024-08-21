@@ -8,7 +8,24 @@ namespace Ucu.Poo.Restaurant;
 public class Waiter
 {
     private ArrayList assignedTables = new ArrayList();
-    private String name = "Juan";
+    private String name;
+    
+    public String Name
+    {
+        get
+        {
+            return name;
+        }
+        set
+        {
+            name = value;
+        }
+    }
+    
+    public Waiter(string name)
+    {
+        this.name = name;
+    }
 
     public ArrayList AssignTable(Table mesa)
     {

@@ -16,6 +16,12 @@ public class Dish
     {
         get { return price; } set { price = value; }
     }
+
+    public Dish(string name, double price)
+    {
+        this.name = name;
+        this.price = price;
+    }
     
     private bool isVegetarian;
     public bool IsVegetarian

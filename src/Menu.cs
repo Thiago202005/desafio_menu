@@ -26,17 +26,22 @@ public class Menu
         dishes.Remove(deleteableDish);
     }
 
-    public string GetDishByName(string name)
+    public Dish GetDishByName(string name)
     {
-        if (dishes.Contains(name))
+        foreach (var platos in dishes)
         {
-            return ($"{name} esta dentro del menu");// en todas las clases en todos los casos debe haber un return, Console.Writeln no sirve
-        }
-        else
-        {
-            return null;
+            if (((Dish)platos).Name == name)
+            {
+                return (Dish)platos;
+            }
         }
 
+        return null;
+    }
+    
+    public ArrayList GetDishes()
+    {
+        return dishes;
     }
 }
     
