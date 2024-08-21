@@ -11,8 +11,8 @@ public class Dish
         get { return name; } set { name = value; }
     }
     
-    private float price;
-    public float Price
+    private double price;
+    public double Price
     {
         get { return price; } set { price = value; }
     }
@@ -22,7 +22,7 @@ public class Dish
     {
         get { return isVegetarian;} set { isVegetarian = value; }
     }
-    private Dish(string name, float price, bool isVegetarian)
+    public Dish(string name, double price, bool isVegetarian)
     {
         this.name = name;
         this.price = price;
