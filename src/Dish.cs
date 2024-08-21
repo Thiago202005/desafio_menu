@@ -5,10 +5,10 @@ namespace Ucu.Poo.Restaurant;
 /// </summary>
 public class Dish
 {
-    private string _name;
+    private string name;
     public string Name
     {
-        get { return _name; } set { _name = value; }
+        get { return name; } set { name = value; }
     }
     
     private float _price;
@@ -24,7 +24,7 @@ public class Dish
     }
     private Dish(string name, float price, bool isVegetarian)
     {
-        this._name = name;
+        this.name = name;
         this._price = price;
         this._isVegetarian = isVegetarian;
     }
