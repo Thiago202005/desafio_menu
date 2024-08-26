@@ -18,7 +18,7 @@ public class Table
     }
 
 
-public bool HasOrders()
+    public bool HasOrders()
     {
         return order.Count > 0;
     }
@@ -75,6 +75,4 @@ public bool HasOrders()
     {
         order.Add(plato);
     }
-    
-    
 }
